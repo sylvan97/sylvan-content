@@ -68,6 +68,7 @@ yarn.lock
 .workbuddy/
 
 # Claude Code 本地设置
+.claude
 .claude/settings.local.json
 
 # 环境变量
