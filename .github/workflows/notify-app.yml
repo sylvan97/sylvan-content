@@ -1,15 +1,16 @@
- name: Notify App
-  on:
-    push:
-      branches: [main]
-  jobs:
-    notify:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Trigger revalidation
-          run: |
-            curl -sf -X POST \
-              -H "Authorization: Bearer ${{ secrets.REVALIDATE_SECRET }}" \
-              -H "Content-Type: application/json" \
-              -d '{"event":"git-update"}' \
-              https://zzffan.cn/api/revalidate
+name: Notify App
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger revalidation
+        run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer ${{ secrets.REVALIDATE_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d '{"event":"git-update"}' \
+            https://zzffan.cn/api/revalidate
