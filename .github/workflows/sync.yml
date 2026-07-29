@@ -8,9 +8,13 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Call revalidate endpoint
+      - name: Call sylvan-canopy revalidate endpoint
+        env:
+          REVALIDATE_URL: ${{ secrets.REVALIDATE_URL }}
+          REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}
         run: |
-          curl -s -X POST "${{ secrets.REVALIDATE_URL }}" \
-            -H "Authorization: Bearer ${{ secrets.REVALIDATE_SECRET }}" \
+          set -e
+          curl -sS --fail -X POST "${REVALIDATE_URL}" \
+            -H "Authorization: Bearer ${REVALIDATE_SECRET}" \
             -H "Content-Type: application/json" \
-            -d '{"event":"git-update"}'
+            -d "{\"event\":\"git-update\",\"repo\":\"${{ github.repository }}\",\"sha\":\"${{ github.sha }}\"}"
