@@ -36,6 +36,7 @@ sylvan-content/
     ├── 04-livephoto-system.md
     ├── 05-format-reference.md
     ├── 06-acceptance-criteria.md
+    ├── 07-sync-workflow.md
     └── requirements.md
 ```
 
@@ -49,5 +50,6 @@ sylvan-content/
        ├── 03-writing-workflow.md        理解"怎么发布一篇文章"
        ├── 04-livephoto-system.md        理解"livephoto 怎么工作"
        ├── 05-format-reference.md        写文章时的格式速查
-       └── 06-acceptance-criteria.md     发布前的验收清单
+       ├── 06-acceptance-criteria.md     发布前的验收清单
+       └── 07-sync-workflow.md           Workflow 部署与排错
 ```
