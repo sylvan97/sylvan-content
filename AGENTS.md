@@ -29,5 +29,5 @@ content/<分区>/<年份>/<slug>/index.md → 写 frontmatter → 写正文 → 
 | `docs/02-content-architecture.md` | Frontmatter 字段表、目录映射、命名规范 |
 | `docs/03-writing-workflow.md` | 完整的写作步骤 |
 | `docs/04-livephoto-system.md` | Livephoto 工作方式 |
-| `docs/05-format-reference.md` | Markdown 格式速查 |
+| `docs/05-writing-spec.md` | 书写规范（支持的 Markdown 语法） |
 | `docs/06-acceptance-criteria.md` | 发布前验收清单 |

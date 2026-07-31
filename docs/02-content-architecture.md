@@ -1,6 +1,6 @@
 # 内容架构
 
-> 来源：`AGENTS.md`、`content/tests/simple-demo/index.md`、`content/tests/format-demo/index.md`
+> 来源：`AGENTS.md`、`docs/05-writing-spec.md`
 
 ## 目录结构 → URL 映射
 
@@ -23,10 +23,7 @@ content/a/b/c/d/e.md
 content/
 ├── travel/          # 游记
 ├── life/            # 生活记录
-├── knowledge/       # 知识笔记
-└── tests/           # 测试/示例（仅供验证渲染）
-    ├── simple-demo/index.md
-    └── format-demo/index.md
+└── knowledge/       # 知识笔记
 ```
 
 ## Frontmatter Schema
@@ -60,28 +57,6 @@ featured: true            # 可选，标记为精选
 - 适当情况下可以使用中文：`content/旅行/2026/普吉岛/`
 - 避免浏览器难以处理的特殊字符
 
-## 现有文件参考
+## 书写规范
 
-### simple-demo/index.md
-
-最小化的示范文章，用于验证 git 内容源正常渲染。包含：
-
-- 标准 frontmatter（title、date、section、tags、cover、featured）
-- 简单正文：标题、无序列表、代码块、引用块
-
-### format-demo/index.md
-
-Markdown 格式功能大全，用于验证消费端渲染完备性。包含：
-
-- 各级标题、文本样式
-- 引用（含多级嵌套）
-- 无序/有序/任务列表
-- 代码块（JS、Python、CSS）
-- 表格（含对齐）
-- 链接与图片（含 CDN 引用）
-- 行内公式 & 块级公式（LaTeX）
-- Mermaid 图表（流程图、时序图、甘特图）
-- 脚注、水平线、定义列表、折叠详情
-- 混合测试：代码中的数学、引用中的公式、表格中的数学
-
-详见 `docs/05-format-reference.md`。
+仓库支持的全部 Markdown 语法（标题、样式、引用、列表、代码、表格、链接、公式、图表等）及使用约定，见 `docs/05-writing-spec.md`。

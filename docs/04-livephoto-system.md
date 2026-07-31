@@ -1,6 +1,6 @@
 # Livephoto 系统
 
-> 来源：`AGENTS.md`、`sylvan-content-需求说明.md`、`content/tests/format-demo/index.md`
+> 来源：`AGENTS.md`、`sylvan-content-需求说明.md`
 
 ## 核心约定
 
@@ -39,7 +39,7 @@
 
 ## 测试验证
 
-在 `content/tests/format-demo/index.md` 中已有测试引用：
+正文引用方式见 `docs/05-writing-spec.md` 的「链接与图片」一节：
 
 ```markdown
 ![](https://cdn.xxx.com/livephoto/sunset/cover.jpg)

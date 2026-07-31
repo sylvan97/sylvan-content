@@ -11,8 +11,6 @@
 | `README.md` | 项目简介 |
 | `AGENTS.md` | Agent 操作指引——核心约定与入口 |
 | `docs/requirements.md` | 完整需求文档——功能列表、用户场景、验收标准、FAQ |
-| `content/tests/simple-demo/index.md` | 简单示例文章（验证 git 内容源正常渲染） |
-| `content/tests/format-demo/index.md` | Markdown 格式大全（验证消费端渲染完备性） |
 
 ## 目录结构
 
@@ -24,17 +22,14 @@ sylvan-content/
 ├── content/                      # 文章目录（目录 = URL）
 │   ├── travel/
 │   ├── life/
-│   ├── knowledge/
-│   └── tests/
-│       ├── simple-demo/index.md
-│       └── format-demo/index.md
+│   └── knowledge/
 └── docs/                         # 渐进式参考
     ├── README.md                 #   ← 先读这里
     ├── 01-project-overview.md
     ├── 02-content-architecture.md
     ├── 03-writing-workflow.md
     ├── 04-livephoto-system.md
-    ├── 05-format-reference.md
+    ├── 05-writing-spec.md
     ├── 06-acceptance-criteria.md
     ├── 07-sync-workflow.md
     └── requirements.md
@@ -49,7 +44,7 @@ sylvan-content/
        ├── 02-content-architecture.md    理解"内容怎么组织"
        ├── 03-writing-workflow.md        理解"怎么发布一篇文章"
        ├── 04-livephoto-system.md        理解"livephoto 怎么工作"
-       ├── 05-format-reference.md        写文章时的格式速查
+       ├── 05-writing-spec.md            写文章时的书写规范
        ├── 06-acceptance-criteria.md     发布前的验收清单
        └── 07-sync-workflow.md           Workflow 部署与排错
 ```
